@@ -18,7 +18,9 @@ export class LoginCompComponent implements OnInit {
 
   gotoHome(data)
   {
-    if (data.emailid=="ravihd54@gmail.com" && data.passwd=="9449138995") {
+    console.log(data)
+    console.log("User name :  ", data.emailid,"password : ", data.password)
+    if (data.emailid=="ravi@girmiti.com" && data.password=="girmiti01") {
       this.service.setValue(data.emailid)
       this.router.navigateByUrl("logout")
       console.log("Great")
